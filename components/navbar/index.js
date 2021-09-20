@@ -1,14 +1,16 @@
 // Dependencies
 import React from "react";
-import { Image, Navbar } from "react-bootstrap";
+import {Image, Navbar as BSNavbar} from "react-bootstrap";
 
-export default () => {
+function NavBar() {
   return (
-    <Navbar bg="light">
+    <BSNavbar bg="light">
       <div className="my-navbar-brand">
         <Image src="/logo.svg" className="image" />
         <span>Los Pata Negra</span>
       </div>
-    </Navbar>
+    </BSNavbar>
   );
-};
+}
+
+export default NavBar;

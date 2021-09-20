@@ -1,10 +1,10 @@
 // Dependencies
 import React from "react";
-import Head from "next/head";
+import NextHead from "next/head";
 
-export default () => {
+function Head() {
   return (
-    <Head>
+    <NextHead>
       <title>Los Pata Negra - Amigos & Padel</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       {/* Icons */}
@@ -87,6 +87,8 @@ export default () => {
       <meta name="theme-color" content="#ffffff"></meta>
 
       {/* End of icons */}
-    </Head>
+    </NextHead>
   );
-};
+}
+
+export default Head;

@@ -1,6 +1,6 @@
 // Dependencies
 import React from "react";
-import { RiInstagramLine, RiFacebookCircleFill } from "react-icons/ri";
+import {RiInstagramLine, RiFacebookCircleFill} from "react-icons/ri";
 
 const Footer = () => {
   return (
@@ -9,10 +9,10 @@ const Footer = () => {
         <div>Síguenos en ...</div>
         <div className="rrss-container">
           <a href="https://www.instagram.com/lospatanegra.snp">
-            <RiInstagramLine size="2rem" color="#034256" />
+            <RiInstagramLine size="3rem" color="#034256" />
           </a>
           <a href="https://www.facebook.com/LosPataNegraSNP">
-            <RiFacebookCircleFill size="2rem" color="#034256" />
+            <RiFacebookCircleFill size="3rem" color="#034256" />
           </a>
         </div>
       </div>

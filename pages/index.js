@@ -3,15 +3,11 @@ import React from "react";
 import Head from "../components/head";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
-import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import {Container, Row, Col, Card, Button} from "react-bootstrap";
+import data from "../constants/data";
+import {absoluteUrl} from "../lib/utils";
 
-const Home = () => {
-  const goToSheet = () => {
-    const link =
-      "https://docs.google.com/spreadsheets/d/1Vwzv64vl-DVAlIrksuMC-bhjNUid9PImwMmZv1E6kZQ";
-    window.open(link, "_blank");
-  };
-
+const Home = ({location}) => {
   return (
     <>
       <Head />
@@ -19,40 +15,68 @@ const Home = () => {
         <Navbar />
         <Container>
           <Row>
-            <Col
-              xs={12}
-              style={{ justifyContent: "center", alignItems: "center" }}
-            >
-              <Card
-                style={{
-                  width: "18rem",
-                  maxWidth: "100%",
-                  marginLeft: "auto",
-                  marginRight: "auto",
-                  marginTop: "2rem",
-                  marginBottom: "2rem",
-                }}
-              >
-                <Card.Img variant="top" src="/cartel_torneo.jpg" />
-                <Card.Body>
-                  <Card.Title>4º Open Pata Negra</Card.Title>
-                  <Card.Text>
-                    Durante los próximos días 2,3 y 4 de octubre se celebra el
-                    4º Open Pata Negra, puede consultar los cuadros en el botón
-                    más abajo
-                  </Card.Text>
-                  <Button variant="primary" onClick={goToSheet}>
-                    Consultar cuadros
-                  </Button>
-                </Card.Body>
-              </Card>
-            </Col>
+            {data.map((item, index) => {
+              return (
+                <Col
+                  key={index}
+                  lg={4}
+                  md={6}
+                  xs={12}
+                  style={{
+                    justifyContent: "center",
+                    alignItems: "center",
+                    margin: "2rem auto",
+                  }}
+                >
+                  <Card
+                    style={{
+                      height: "100%",
+                    }}
+                  >
+                    <Card.Img
+                      variant="top"
+                      src={item.image}
+                      alt={item.imageAlt}
+                    />
+                    <Card.Body>
+                      <Card.Title>{item.title}</Card.Title>
+                      <Card.Text>{item.text}</Card.Text>
+                      {item.actions.map((action, index) => {
+                        return (
+                          <Button
+                            key={index}
+                            style={{
+                              marginBottom: "0.5rem",
+                              width: "100%",
+                            }}
+                            {...action}
+                            variant={action.color}
+                            onClick={() => action.onClick({location})}
+                          >
+                            {action.label}
+                          </Button>
+                        );
+                      })}
+                    </Card.Body>
+                  </Card>
+                </Col>
+              );
+            })}
           </Row>
         </Container>
         <Footer />
       </div>
     </>
   );
+};
+
+Home.getInitialProps = ({req}) => {
+  if (process.env.NODE_ENV === "development") {
+    const {protocol, host} = absoluteUrl(req);
+    return {location: `${protocol}//${host}`};
+  } else {
+    return {location: `https://lospatanegra.com`};
+  }
 };
 
 export default Home;
