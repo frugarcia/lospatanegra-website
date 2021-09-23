@@ -17,11 +17,11 @@ const data = [
       {
         onClick: () =>
           goToBlankLink(
-            "https://docs.google.com/spreadsheets/d/1Vwzv64vl-DVAlIrksuMC-bhjNUid9PImwMmZv1E6kZQ"
+            "https://docs.google.com/spreadsheets/d/1tLXYfBDdVjAFoijf7rQeiPC_gBjmmAmo"
           ),
         label: "Consultar cuadros",
         color: "primary",
-        disabled: true,
+        // disabled: true,
       },
     ],
   },
