@@ -1,5 +1,5 @@
 // Dependencies
-import {goToBlankLink} from "../lib/utils";
+import { goToBlankLink } from "../../lib/utils";
 
 const data = [
   {
@@ -9,7 +9,7 @@ const data = [
     imageAlt: "VI Torneo Los Pata Negra",
     actions: [
       {
-        onClick: ({location}) =>
+        onClick: ({ location }) =>
           goToBlankLink(`${location}/cartel_6_torneo.jpg`),
         label: "Consultar cartel",
         color: "danger",
@@ -32,7 +32,7 @@ const data = [
     imageAlt: "V Torneo Los Pata Negra",
     actions: [
       {
-        onClick: ({location}) =>
+        onClick: ({ location }) =>
           goToBlankLink(`${location}/cartel_5_torneo.jpg`),
         label: "Consultar cartel",
         color: "danger",
