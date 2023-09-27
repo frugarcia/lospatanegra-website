@@ -14,7 +14,7 @@ export default function Palmares() {
           <div className='mt-10 flex flex-col gap-5'>
             {palmares.map((item) => {
               return (
-                <div className='border-2 border-gray-400/60 p-4 rounded-lg bg-white/70'>
+                <div key={item.year} className='border-2 border-gray-400/60 p-4 rounded-lg bg-white/70'>
                   <div className='flex gap-2 mb-2 items-center'>
                     <svg xmlns="http://www.w3.org/2000/svg" className='w-[30px] h-[30px] stroke-yellow-700' viewBox="0 0 24 24" strokeWidth="1.2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
                       <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -28,7 +28,7 @@ export default function Palmares() {
                     <span className='text-xl font-medium text-yellow-700'>Año {item.year}</span>
                   </div>
                   <ul>
-                    {item.items.map((p) => (<li className='font-light py-1'>- {p}</li>))}
+                    {item.items.map((p, i) => (<li key={`${item.year}_${i}`} className='font-light py-1'>- {p}</li>))}
                   </ul>
                 </div>
               )

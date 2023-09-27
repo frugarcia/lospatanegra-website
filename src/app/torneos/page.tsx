@@ -17,7 +17,7 @@ export default function Torneos() {
           <div className='mt-10 flex flex-col gap-10'>
             {torneos.reverse().map(item => {
               return (
-                <article className='flex-col sm:flex-row py-4 sm:py-0 flex gap-1 border-2 border-gray-400/60 rounded-lg bg-white/70 overflow-hidden items-center'>
+                <article key={item.id} className='flex-col sm:flex-row py-4 sm:py-0 flex gap-1 border-2 border-gray-400/60 rounded-lg bg-white/70 overflow-hidden items-center'>
                   <div className='w-56 sm:w-40 h-full'>
                     <Image src={item.image.url} alt={item.imageAlt} width={item.image.width} height={item.image.height} className='object-fill h-full' />
                   </div>
