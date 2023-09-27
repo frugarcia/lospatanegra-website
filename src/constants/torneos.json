@@ -29,7 +29,7 @@
         "text": "Desde el 29 de septiembre hasta el 1 de octubre se celebra el 7º Open Pata Negra, puede consultar el cartel, los cuadros y la galería de fotos en los botones de más abajo",
         "image": {"width": 600, "height": 842,"url":"/cartel_7_torneo.jpg"},
         "imageAlt": "VII Torneo Los Pata Negra",
-        "sheet": {"active": false, "url": "https://docs.google.com/spreadsheets/d/1I7ZvWx1QoRHsAzKbn1TJWtnO3heXmgvDSKoEtq5EGcQ"},
+        "sheet": {"active": true, "url": "https://docs.google.com/spreadsheets/d/1tZ_Z3T3F5M7heJlsfgyCuCLT8xCTqr5-"},
         "inscription": { "active": false, "url": "https://docs.google.com/forms/d/1b7-iHRuqJz2PlctbXuMrO-GsP0iIFSdqrKindPBXRDY" },
         "gallery": { "active": false, "url": "https://docs.googl" }
     }
