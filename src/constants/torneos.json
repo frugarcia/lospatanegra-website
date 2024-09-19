@@ -3,7 +3,11 @@
     "id": "1",
     "title": "4º Open Pata Negra",
     "text": "Durante los próximos días 2,3 y 4 de octubre se celebra el 4º Open Pata Negra, puede consultar los cuadros en el botón más abajo",
-    "image": {"width": 600, "height": 850, "url": "/cartel_4_torneo.jpg"},
+    "image": {
+      "width": 600,
+      "height": 850,
+      "url": "/cartel_4_torneo.jpg"
+    },
     "imageAlt": "IV Torneo Los Pata Negra",
     "sheet": {
       "active": true,
@@ -14,7 +18,11 @@
     "id": "2",
     "title": "5º Open Pata Negra",
     "text": "Durante los próximos días 24,25 y 26 de septiembre se celebra el 5º Open Pata Negra, puede consultar el cartel y los cuadros en el botón más abajo",
-    "image": {"width": 600, "height": 850, "url": "/cartel_5_torneo.jpg"},
+    "image": {
+      "width": 600,
+      "height": 850,
+      "url": "/cartel_5_torneo.jpg"
+    },
     "imageAlt": "V Torneo Los Pata Negra",
     "sheet": {
       "active": true,
@@ -25,7 +33,11 @@
     "id": "3",
     "title": "6º Open Pata Negra",
     "text": "Durante los próximos días 23,24 y 25 de septiembre se celebra el 6º Open Pata Negra, puede consultar el cartel y los cuadros en el botón más abajo",
-    "image": {"width": 600, "height": 849, "url": "/cartel_6_torneo.jpg"},
+    "image": {
+      "width": 600,
+      "height": 849,
+      "url": "/cartel_6_torneo.jpg"
+    },
     "imageAlt": "VI Torneo Los Pata Negra",
     "sheet": {
       "active": true,
@@ -36,7 +48,11 @@
     "id": "4",
     "title": "7º Open Pata Negra",
     "text": "Desde el 29 de septiembre hasta el 1 de octubre se celebra el 7º Open Pata Negra, puede consultar el cartel, los cuadros y la galería de fotos en los botones de más abajo",
-    "image": {"width": 600, "height": 842, "url": "/cartel_7_torneo.jpg"},
+    "image": {
+      "width": 600,
+      "height": 842,
+      "url": "/cartel_7_torneo.jpg"
+    },
     "imageAlt": "VII Torneo Los Pata Negra",
     "sheet": {
       "active": true,
@@ -46,13 +62,20 @@
       "active": false,
       "url": "https://docs.google.com/forms/d/1b7-iHRuqJz2PlctbXuMrO-GsP0iIFSdqrKindPBXRDY"
     },
-    "gallery": {"active": false, "url": "https://docs.googl"}
+    "gallery": {
+      "active": false,
+      "url": "https://docs.googl"
+    }
   },
   {
     "id": "8",
     "title": "8º Open Pata Negra",
-    "text": "Desde el 20 al 22 de septiembre se celebra el 8º Open Pata Negra, puedes inscribirte, consultar el cartel, los cuadros y la galería de fotos en los botones de más abajo",
-    "image": {"width": 600, "height": 849, "url": "/cartel_8_torneo.jpg"},
+    "text": "Desde el 4 al 6 de octubre se celebra el 8º Open Pata Negra, puedes inscribirte, consultar el cartel, los cuadros y la galería de fotos en los botones de más abajo",
+    "image": {
+      "width": 600,
+      "height": 849,
+      "url": "/cartel_8_torneo.jpg"
+    },
     "imageAlt": "VIII Torneo Los Pata Negra",
     "sheet": {
       "active": false,
@@ -62,6 +85,9 @@
       "active": true,
       "url": "https://forms.gle/b4mZ5yc9vSPLJ3fk8"
     },
-    "gallery": {"active": false, "url": "https://docs.googl"}
+    "gallery": {
+      "active": false,
+      "url": "https://docs.googl"
+    }
   }
 ]
